@@ -1,106 +1,204 @@
+/* ============================= */
+/* Manufacturing Page Styles */
+/* ============================= */
 
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  body {
-    background-color: #e5e5e5;
-  }
-  
-  /* Header */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-  }
-  
-  .logo {
-    background: #00bcd4;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-  }
-  
-  /* Hero Section */
-  .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    padding: 80px 100px;
-  }
-  
-  .hero-left h1 {
-    font-size: 36px;
-    font-weight: 700;
-  }
-  
-  .hero-center {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .hero-center img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 30px;
-  }
-  
-  .hero-right p {
-    font-size: 22px;
-    line-height: 1.6;
-  }
-  
-  /* Slider */
-  .slider {
-    width: 150px;
-    margin: 40px auto;
-    background: #666;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
+.manufacturing-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.manufacturing-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Section */
+.machine-section {
+  margin-bottom: 30px;
+}
+
+.machine-section h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Machine Layout */
+.machine-box {
+  display: flex;
+  gap: 20px;
+  background: #d3d3d3;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.machine-box img {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  background: white;
+}
+
+/* Details */
+.machine-details {
+  display: flex;
+  align-items: center;
+}
+
+.machine-details ul {
+  list-style: none;
+}
+
+.machine-details li {
+  margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .machine-box {
+    flex-direction: column;
     align-items: center;
   }
-  
-  .slider button {
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+
+  .machine-details {
+    text-align: center;
   }
-  
-  /* Responsive */
-  @media (max-width: 900px) {
-    .hero {
-      grid-template-columns: 1fr;
-      text-align: center;
-      gap: 40px;
-    }
-  
-    .hero-right p {
-      font-size: 18px;
-    }
+}
+ 
+/* ============================= */
+/* Contact Page */
+/* ============================= */
+
+.contact-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #f5f5f5;
+  padding: 40px;
+}
+
+/* Title */
+.contact-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Top Layout */
+.contact-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+/* Social Buttons */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-btn {
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: #d3d3d3;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #888;
+}
+
+/* Profile Image */
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Email Section */
+.email-title {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+/* Form Layout */
+.contact-form {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+.form-left input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #d3d3d3;
+}
+
+/* Right side */
+.form-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-right textarea {
+  height: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #d3d3d3;
+}
+
+/* Send Button */
+.send-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  background: #00bcd4;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: 0.2s;
+}
+
+.send-btn:hover {
+  background: #0097a7;
+}
+
+/* Fix button positioning */
+.form-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Optional: center or left align */
+.send-btn {
+  display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-top {
+    flex-direction: column;
+    gap: 20px;
   }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .form-left {
+    width: 100%;
+  }
+}
