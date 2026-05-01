@@ -522,5 +522,27 @@ h1, h2, h3, p {
 
   .hero-right p {
     font-size: 1rem;
+  }<style>
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.fade-up:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.fade-up:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+</style>
+  
 }
