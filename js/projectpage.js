@@ -6,9 +6,11 @@ const projects = {
     date: "2026 Present",
 
     images: [
+     
+      "images/CNC_1.jpg",
+      "images/CNC_2.jpg",
       "images/Project Image 2.JPG",
-      "images/Project Image 1.jpg",
-      "images/cnc3.jpg"
+      "images/CNC_4.jpg",     
     ],
 
     description:
@@ -29,7 +31,7 @@ const projects = {
     description:
       "Portfolio website built using HTML, CSS, and JavaScript.",
 
-    skills: ["HTML", "CSS", "JavaScript"]
+    skills: ["HTML", "CSS", "JavaScript","ChatGPT"]
   },
 
   crowfoot: {
@@ -37,7 +39,8 @@ const projects = {
     date: "2023-2024",
 
     images: [
-      "images/Project Image 3.JPG"
+      "images/Project Image 3.JPG",
+      "images/CW_2.JPG"
     ],
 
     description:
