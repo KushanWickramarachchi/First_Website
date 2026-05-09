@@ -7,6 +7,8 @@
 </head>
 <body>
 
+
+
   <!-- Navbar -->
    <!-- Header (reuse your existing styles) -->
    <div class="header">
@@ -43,6 +45,9 @@
         <button>Skill 1</button>
         <button>Skill 2</button>
         <button>Skill 3</button>
+
+        <button onclick="openProjectModal('cnc')">Learn More</button>
+
       </div>
     </div>
 
@@ -50,6 +55,40 @@
       <img src="images/Project Image 2.JPG" alt="CNC Project">
     </div>
   </section>
+
+  <div class="overlay" id="overlay">
+    <div class="project-modal">
+  
+      <button class="close-btn" onclick="closeModal()">×</button>
+  
+      <div class="modal-left">
+
+        <button class="slide-btn left"
+          onclick="previousSlide()">
+          ❮
+        </button>
+      
+        <img id="modalImage" src="" alt="Project image">
+      
+        <button class="slide-btn right"
+          onclick="nextSlide()">
+          ❯
+        </button>
+      
+      </div>
+  
+      <div class="modal-right">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDate"></p>
+        <p id="modalDescription"></p>
+  
+        <div id="modalSkills" class="modal-skills"></div>
+      </div>
+  
+    </div>
+  </div>
+  
+
 
   <!-- Project 2 -->
   <section class="project-card">
@@ -103,6 +142,9 @@
     </div>
   </section>
   </div>
+
+<script src="js/projectpage.js"></script>
+  
 
 </body>
 </html>
