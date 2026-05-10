@@ -14,7 +14,8 @@ const projects = {
     ],
 
     description:
-      "This CNC project focuses on machining, setup, toolpaths, manufacturing accuracy, and mechanical alignment.",
+      " \n The project was broken down into 4 steps. Mechanical assembly, electrical assembly, software setup and tramming the machine. The manual was great for first 3 steps. There was little to now instructions on tramming the machine. After facing the bed for the first time I descovered there was 1/8 inch difference on the x axis. I used various shims to and dial gauges to fix this error. at the End I was able to get the flatness of the bed relative to spindle to +/- .005 inch ",
+  
 
     skills: ["CNC", "Manufacturing", "Toolpaths"]
   },
@@ -44,7 +45,7 @@ const projects = {
     ],
 
     description:
-      "Mechanical crowfoot tool design project.",
+      " \n This is a work in progress the goal was to creae crowfoots that can use a 1/4 inch drive. Initially I wanted to make it out of aluminum then move on to steel. I want to make one out if steel in the this month. You can see pictures of my first attempt at making a part and my second attempt",
 
     skills: ["SolidWorks", "Mechanical Design"]
   }
@@ -61,27 +62,15 @@ function openProjectModal(projectName) {
   document.getElementById("modalTitle").innerText =
     activeProject.title;
 
-  document.getElementById("modalDate").innerText =
-    activeProject.date;
+  //document.getElementById("modalDate").innerText =
+   // activeProject.date;
 
   document.getElementById("modalDescription").innerText =
     activeProject.description;
 
   updateSlide();
 
-  const skillsContainer =
-    document.getElementById("modalSkills");
-
-  skillsContainer.innerHTML = "";
-
-  activeProject.skills.forEach(skill => {
-
-    const button = document.createElement("button");
-
-    button.innerText = skill;
-
-    skillsContainer.appendChild(button);
-  });
+ 
 
   document.getElementById("overlay").style.display =
     "flex";
