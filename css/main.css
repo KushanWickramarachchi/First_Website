@@ -522,7 +522,9 @@ h1, h2, h3, p {
 
   .hero-right p {
     font-size: 1rem;
-  }<style>
+  }
+  
+ 
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
@@ -543,6 +545,6 @@ h1, h2, h3, p {
     transform: translateY(0);
   }
 }
-</style>
+
   
 }
