@@ -317,6 +317,77 @@ img{
     p{
         font-size: 14px;
     }
+}.coming-soon{
+    width: 90%;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 50px 20px;
+
+    background: #ffffff;
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    animation: fadeUp 1s ease;
 }
+
+.coming-soon .icon{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.coming-soon h2{
+    font-size: 42px;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.coming-soon p{
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Hover effect */
+.coming-soon:hover{
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
+
+/* Animation */
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    .coming-soon{
+        padding: 35px 15px;
+    }
+
+    .coming-soon h2{
+        font-size: 28px;
+    }
+
+    .coming-soon p{
+        font-size: 15px;
+    }
+
+    .coming-soon .icon{
+        font-size: 45px;
+    }
+}
+
 
 
