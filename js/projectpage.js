@@ -14,7 +14,10 @@ const projects = {
     ],
 
     description:
-      " \n The project was broken down into 4 steps. Mechanical assembly, electrical assembly, software setup and tramming the machine. The manual was great for first 3 steps. There was little to now instructions on tramming the machine. After facing the bed for the first time I descovered there was 1/8 inch difference on the x axis. I used various shims to and dial gauges to fix this error. at the End I was able to get the flatness of the bed relative to spindle to +/- .005 inch ",
+      ` \n The project was broken down into 4 steps. Mechanical assembly, electrical assembly, software setup and tramming the machine. \n\n The manual was great for first 3 steps. Majority of the mechanical setup was done using allankeys, wrenches and screwdriver set.The electrical requird a multimeter and a soldering iron.
+      The hard part was tramming the machine after the initial setup. \n \n There was little to no instructions on tramming the machine and I realized there was few more precision measuring tools you have to purchase to ensure the machine is trammed correctly. 
+      \n\n After setting up the machine the first step involved facing the bed. After the first time I descovered there was 1/8 inch difference on the x axis. I used various shims to and dial gauges to fix this error. I have so far machined propeller knobs, Trim Knob for a twin otter overhead console.In the future I will attempt to machine
+      parts out of Steel. Which will be part of my crowfoot project`,
   
 
     skills: ["CNC", "Manufacturing", "Toolpaths"]
@@ -45,7 +48,7 @@ const projects = {
     ],
 
     description:
-      " \n This is a work in progress the goal was to creae crowfoots that can use a 1/4 inch drive. Initially I wanted to make it out of aluminum then move on to steel. I want to make one out if steel in the this month. You can see pictures of my first attempt at making a part and my second attempt",
+      " \n This is a work in progress, the goal was to create crowfoots that can use a 1/4 inch drive. So far I have made 2 crowfoots out of Aluminum. You can see pictures of my attempts on the slide show. I will add the parts that are made out of steel soon.",
 
     skills: ["SolidWorks", "Mechanical Design"]
   }
