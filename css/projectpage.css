@@ -368,24 +368,42 @@ img{
         transform: translateY(0);
     }
 }
+/* Animated Gradient Background */
 
-/* Mobile Responsive */
-@media(max-width:768px){
+body{
+    margin: 0;
+    padding: 0;
 
-    .coming-soon{
-        padding: 35px 15px;
+    background: linear-gradient(
+        -45deg,
+        #dfe9f3,
+        #ffffff,
+        #d6f5ff,
+        #f3f7ff
+    );
+
+    background-size: 400% 400%;
+
+    animation: gradientMove 12s ease infinite;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* Gradient Animation */
+
+@keyframes gradientMove {
+
+    0%{
+        background-position: 0% 50%;
     }
 
-    .coming-soon h2{
-        font-size: 28px;
+    50%{
+        background-position: 100% 50%;
     }
 
-    .coming-soon p{
-        font-size: 15px;
-    }
-
-    .coming-soon .icon{
-        font-size: 45px;
+    100%{
+        background-position: 0% 50%;
     }
 }
 
